@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#f00000"
+    android:layout_height="50dp"
+    android:layout_weight="0.1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:text="购物车"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:text="编辑"/>
+
+
+</RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_weight="0.8"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/quanxuanzz"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cricle_no"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/quanxuanzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:text="全选"/>
+
+        <TextView
+            android:id="@+id/zongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="总价"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/sum_num"
+            android:text="去计算(0)"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
